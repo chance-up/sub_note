@@ -4,7 +4,7 @@ module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'Chance-up 노트',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -47,7 +47,7 @@ module.exports = {
       },
     ],
     sidebar: {
-      '/note/': [
+      '/': [
         {
           title: 'about',
           collapsable: false,
@@ -60,7 +60,7 @@ module.exports = {
         {
           title: 'js',
           collapsable: false,
-          children: [''],
+          children: ['js/closure', 'js/excution-context'],
         },
       ],
     },
