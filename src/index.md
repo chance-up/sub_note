@@ -1,15 +1,14 @@
 ---
 home: true
-heroImage: https://v1.vuepress.vuejs.org/hero.png
-tagline: 
+tagline:
 actionText: Quick Start →
-actionLink: /guide/
+actionLink: /note/about
 features:
-- title: Feature 1 Title
-  details: Feature 1 Description
-- title: Feature 2 Title
-  details: Feature 2 Description
-- title: Feature 3 Title
-  details: Feature 3 Description
+  - title: JS & TS
+    details: 📕 JavaScript 및 TypeScript에 대한 내용을 담습니다
+    link: /blog/js/js.html
+  - title: About Me
+    details: 😇 작성자 소개입니다
+    link: /about/
 footer: Made by  with ❤️
 ---

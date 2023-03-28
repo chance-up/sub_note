@@ -1,4 +1,4 @@
-const { description } = require('../../package')
+const { description } = require('../../package');
 
 module.exports = {
   /**
@@ -18,7 +18,7 @@ module.exports = {
   head: [
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
-    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
   ],
 
   /**
@@ -34,37 +34,40 @@ module.exports = {
     lastUpdated: false,
     nav: [
       {
-        text: 'Guide',
-        link: '/guide/',
+        text: 'About me',
+        link: '/about/',
       },
       {
-        text: 'Config',
-        link: '/config/'
+        text: 'Blog',
+        link: 'https://rangsub.tistory.com',
       },
       {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
+        text: 'Github',
+        link: 'https://github.com/chance-up',
+      },
     ],
     sidebar: {
-      '/guide/': [
+      '/note/': [
         {
-          title: 'Guide',
+          title: 'about',
           collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
+        },
+        {
+          title: 'guide',
+          collapsable: false,
+          children: ['', 'using-vue'],
+        },
+        {
+          title: 'js',
+          collapsable: false,
+          children: [''],
+        },
       ],
-    }
+    },
   },
 
   /**
    * Apply plugins，ref：https://v1.vuepress.vuejs.org/zh/plugin/
    */
-  plugins: [
-    '@vuepress/plugin-back-to-top',
-    '@vuepress/plugin-medium-zoom',
-  ]
-}
+  plugins: ['@vuepress/plugin-back-to-top', '@vuepress/plugin-medium-zoom'],
+};
